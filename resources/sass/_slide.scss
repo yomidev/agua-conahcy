@@ -1,0 +1,50 @@
+$animationSpeed: 40s;
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 12))}
+}
+
+.slider {
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: auto;
+	
+	.slider-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 24);
+	}
+	.slide {
+		height: 100px;
+		width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            opacity: 0.5;
+        }
+	}
+}
+
+@media screen and (max-width:480px) {
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-100px * 12))}
+    }
+    .slider{
+        height: 50px;
+        .slider-track{
+            animation: scroll $animationSpeed linear infinite;
+            width: calc(100px * 24);
+        }
+        .slide{
+            height: 50px;
+            width: 100px;
+        }
+    }
+    
+    
+}

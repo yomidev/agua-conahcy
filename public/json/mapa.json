@@ -1,0 +1,114 @@
+{
+    "institutionName": "Tecnológico Nacional de México",
+     "laboratories":[
+        {
+            "code": 1,
+            "nameState": "Aguascalientes",
+            "locations":[
+                {
+                    "nameLocation": "Tecnológico Nacional de México IT Aguascalientes",
+                    "image": "/pictures/logo_ITA.png",
+                    "link": "https://aguascalientes.tecnm.mx"
+                },
+                {
+                    "nameLocation": "Modelo Integral de Aguas de Aguascalientes (MIAA)",
+                    "image": "/pictures/logo-miaa.png",
+                    "link": "https://www.miaa.mx/"
+                    
+                },
+                {
+                    "nameLocation":"Instituto de Agua del Estado de Aguascalientes (INAGUA)",
+                    "image": "/pictures/inagua.png",
+                    "link": "https://www.aguascalientes.gob.mx/inagua/"
+                },
+                {
+                    "nameLocation":"Fundición Inyectada del Centro S.A de C.V",
+                    "image":"/pictures/logo-fundicion.png",
+                    "link":"https://www.fincsa.com/mx/"
+                }
+            ]
+        },
+        {
+            "code": 2,
+            "nameState": "Baja California",
+            "locations":[
+                {
+                    "nameLocation": "Tecnológico Nacional de México IT Tijuana",
+                    "image": "/pictures/logo_ITT.png",
+                    "link": "https://www.tijuana.tecnm.mx/"
+                }
+            ]
+        },
+        {
+            "code": 3,
+            "nameState": "Estado de México",
+            "locations":[
+                {
+                    "nameLocation": "Tecnológico Nacional de México IT Toluca",
+                    "image": "/pictures/logo-toluca.png",
+                    "link": "https://www.tolucatecnm.mx/"
+                }
+            ]
+        },
+        {
+            "code": 4,
+            "nameState": "Oaxaca",
+            "locations":[
+                {
+                    "nameLocation": "Tecnológico Nacional de México IT Valle de Etla",
+                    "image": "/pictures/logo-etla.png",
+                    "link": "https://vetla.tecnm.mx/"
+                }
+            ]
+        },
+        {
+            "code": 5,
+            "nameState": "Querétaro",
+            "locations":[
+                {
+                    "nameLocation": "Universidad Nacional Autónoma de México Campus Juriquilla",
+                    "image": "/pictures/logo-juriquilla.png",
+                    "link": "https://www.campusjuriquilla.unam.mx/"
+                }
+            ]
+        },
+        {
+            "code": 6,
+            "nameState": "Tabasco",
+            "locations":[
+                {
+                    "nameLocation": "Tecnológico Nacional de México IT Villahermosa",
+                    "image": "/pictures/logo-villahermosa.png",
+                    "link": "https://villahermosa.tecnm.mx/"
+                }
+            ]
+        },
+        {
+            "code": 7,
+            "nameState": "Veracruz",
+            "locations":[
+                {
+                    "nameLocation": "Tecnológico Nacional de México IT Boca del Río",
+                    "image": "/pictures/logo-rio.png",
+                    "link": "https://bdelrio.tecnm.mx/"
+                },
+                {
+                    "nameLocation": "Tecnológico Nacional de México IT Cerro Azul",
+                    "image": "/pictures/logo-cerro.png",
+                    "link": "https://cerroazul.tecnm.mx/"
+                }
+            ]
+        },
+        {
+            "code": 8,
+            "nameState": "Yucatán",
+            "locations":[
+                {
+                    "nameLocation": "Tecnológico Nacional de México IT Mérida",
+                    "image": "/pictures/logo-merida.png",
+                    "link": "https://www.merida.tecnm.mx/"
+                }
+            ]
+        }
+     ]
+}
