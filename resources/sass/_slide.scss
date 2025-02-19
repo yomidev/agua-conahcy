@@ -11,7 +11,7 @@ $animationSpeed: 40s;
 	overflow:hidden;
 	position: relative;
 	width: auto;
-	
+
 	.slider-track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
@@ -45,6 +45,6 @@ $animationSpeed: 40s;
             width: 100px;
         }
     }
-    
-    
+
+
 }

@@ -22,6 +22,7 @@ Route::get('/servicios',[App\Http\Controllers\FrontendController::class, 'servic
 Route::get('/posgrados',[App\Http\Controllers\FrontendController::class, 'postgraduate'])->name('postgraduate');
 Route::get('/investigacion',[App\Http\Controllers\FrontendController::class, 'investigation'])->name('investigation');
 Route::get('/vinculacion',[App\Http\Controllers\FrontendController::class, 'vinculation'])->name('vinculation');
+Route::get('/congreso',[App\Http\Controllers\FrontendController::class, 'congreso'])->name('congreso');
 
 Auth::routes();
 Route::any('register', function () { abort(403);});

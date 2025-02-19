@@ -1,0 +1,22 @@
+.countdown-box{
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #1d98a7;
+    margin-top: -20px;
+    .countdown-item {
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+        .countdown-number{
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .countdown-text{
+            font-size: 1em;
+            color: #344474;
+            font-weight: bold;
+        }
+    }
+
+}
