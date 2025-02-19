@@ -78,4 +78,11 @@ class FrontendController extends Controller
         $internacional = International::all();
         return view('vinculation',['title'=>$title, 'institucion'=>$institucion, 'dependencia' => $dependencia,'internacional' => $internacional]);
     }
+
+    public function congreso() {
+        $title = "Congreso";
+        $startDate = Carbon::now();
+        $endDate = Carbon::create(2025,9,25,0,0,0);
+        return view('congreso',['title'=>$title, 'startDate' => $startDate, 'endDate' => $endDate]);
+    }
 }

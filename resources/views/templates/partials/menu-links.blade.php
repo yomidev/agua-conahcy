@@ -12,6 +12,7 @@
             <li class="nav-item {{ Request::is('investigacion') ? 'active2' : '' }}"><a href="{{route('investigation')}}" class="nav-link text-white hover-link">Investigación</a></li>
             <li class="nav-item {{ Request::is('posgrados') ? 'active2' : '' }}"><a href="{{route('postgraduate')}}" class="nav-link text-white hover-link">Posgrados</a></li>
             <li class="nav-item {{ Request::is('vinculacion') ? 'active2' : '' }}"><a href="{{route('vinculation')}}" class="nav-link text-white hover-link">Vinculación</a></li>
+            <li class="nav-item {{ Request::is('congreso') ? 'active2' : '' }}"><a href="{{route('congreso')}}" class="nav-link text-white hover-link">Congreso</a></li>
             <li class="nav-item {{ Request::is('#comunicacion') ? 'active2' : '' }}"><a href="#comunicacion" class="nav-link text-white hover-link">Comunicación Social</a></li>
         </ul>
     </div>
