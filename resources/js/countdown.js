@@ -1,4 +1,4 @@
-let endDate = new Date("Sep 25, 2025 00:00:00").getTime();
+let endDate = new Date("Sep 25, 2025 12:10:00").getTime();
 function updateCountdown(){
     let now = new Date().getTime();
     let distance = endDate - now;

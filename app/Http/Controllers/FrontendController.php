@@ -9,6 +9,7 @@ use Carbon\Carbon;
 use App\Models\Institution;
 use App\Models\International;
 use App\Models\Dependency;
+use Illuminate\Support\Facades\File;
 
 class FrontendController extends Controller
 {
@@ -81,8 +82,9 @@ class FrontendController extends Controller
 
     public function congreso() {
         $title = "Congreso";
-        $startDate = Carbon::now();
-        $endDate = Carbon::create(2025,9,25,0,0,0);
-        return view('congreso',['title'=>$title, 'startDate' => $startDate, 'endDate' => $endDate]);
+        $json = public_path('json/patrocinador.json');
+        $jsonData = File::exists($json) ? File::get($json) : '[]';
+        $images = json_decode($jsonData, true);
+        return view('congreso',['title'=>$title, 'images' => $images]);
     }
 }

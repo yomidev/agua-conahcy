@@ -1,0 +1,29 @@
+.cintillo{
+    display:none;
+}
+
+@media screen and (max-width: 768px){
+    #information-congreso{
+        justify-content: center !important;
+        gap:20px;
+    }
+    .logos-congreso{
+        display: none !important;
+    }
+    .cintillo{
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .padding-responsive{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .padding-responsive-ol{
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+}
