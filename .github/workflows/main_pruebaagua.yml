@@ -41,6 +41,29 @@ jobs:
         with:
           name: php-app
           path: release.zip
+      - name: Instalar dependencias de Composer
+        run: composer install --no-dev --optimize-autoloader
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Ajusta según tu versión de Node.js
+      - name: Instalar dependencias de NPM
+        run: npm install
+
+      - name: Compilar assets con Vite
+        run: npm run build
+
+      - name: Generar Vite manifest
+        run: php artisan vendor:publish --tag=vite-config
+
+      - name: Cachear archivos compilados
+        uses: actions/cache@v3
+        with:
+          path: public/build
+          key: ${{ runner.os }}-vite-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-vite-
 
   deploy:
     runs-on: ubuntu-latest
