@@ -146,6 +146,7 @@
                 <div class="card-body">
                     <!--<p>Título de la plenaria</p>-->
                     <p class="fw-bold">Dr. Satinder Kaur Brar</p>
+                    <br>
                     <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal" data-researcher="satinder_kaur_brar">Curriculum Vitae</a>
                 </div>
             </div>
@@ -153,34 +154,40 @@
                 <img src="{{asset('pictures/eva.jpg')}}" alt="" class="img-fluid">
                 <div class="card-body">
                     <p class="fw-bold">Dra. Eva Rose Kozak</p>
-                    <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal" data-researcher="eva_rose_kozak">Curriculum Vitae</a>
+                    <br>
+                    <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-researcher="eva_rose_kozak">Curriculum Vitae</a>
                 </div>
             </div>
             <div class="card plenary-card text-center">
                 <img src="{{asset('pictures/natalie.png')}}" alt="" class="img-fluid">
                 <div class="card-body">
                     <p class="fw-bold">Dra. Natalie Mladenov</p>
-                    <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal">Curriculum Vitae</a>
+                    <br>
+                    <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal3">Curriculum Vitae</a>
                 </div>
             </div>
             <div class="card plenary-card text-center">
                 <img src="{{asset('pictures/amy.jpg')}}" alt="" class="img-fluid">
                 <div class="card-body">
                     <p class="fw-bold">Prof. Amy M. Bilton </p>
-                    <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal">Curriculum Vitae</a>
+                    <br>
+                    <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal4">Curriculum Vitae</a>
                 </div>
             </div>
             <div class="card plenary-card text-center">
-                <img src="{{asset('pictures/e52a97681aa1d2077e6afc4e53667ae6.jpg')}}" alt="" class="img-fluid">
+                <img src="{{asset('pictures/rachelgomes.jpg')}}" alt="" class="img-fluid">
                 <div class="card-body">
-                    <!--<h5 class="card-title
-                    ">Título de la plenaria</h5>
-                    <p class="card-text">Nombre del ponenente.</p>--><a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal">Curriculum Vitae</a>
+                    <p class="fw-bold">Prof. Rachel Louise Gomes</p>
+                    <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal5">Curriculum Vitae</a>
                 </div>
             </div>
         </div>
     </div>
     @include('templates.congreso._modal')
+    @include('templates.congreso._modal2')
+    @include('templates.congreso._modal3')
+    @include('templates.congreso._modal4')
+    @include('templates.congreso._modal5')
 
 
 </main>
