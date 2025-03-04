@@ -164,11 +164,10 @@
                 </div>
             </div>
             <div class="card plenary-card text-center">
-                <img src="{{asset('pictures/c1946580d9755f4da4d2c3e1dc5e8148.jpg')}}" alt="" class="img-fluid">
+                <img src="{{asset('pictures/amy.jpg')}}" alt="" class="img-fluid">
                 <div class="card-body">
-                    <!--<h5 class="card-title
-                    ">Título de la plenaria</h5>
-                    <p class="card-text">Nombre del ponenente.</p>--> <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal">Curriculum Vitae</a>
+                    <p class="fw-bold">Prof. Amy M. Bilton </p>
+                    <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal">Curriculum Vitae</a>
                 </div>
             </div>
             <div class="card plenary-card text-center">
