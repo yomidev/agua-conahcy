@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         const response = await fetch('./json/objetivo.json');
         const images = await response.json();
-        const carouselInner = document.querySelector('.carousel-inner');
+        const carouselInner = document.querySelector('.carousel-inner-3');
 
         carouselInner.innerHTML = '';
 

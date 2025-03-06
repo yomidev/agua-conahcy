@@ -59,7 +59,7 @@
         <div class="row align-items-center">
             <div class="col-md-6 text-center">
                 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                    <div class="carousel-inner"></div>
+                    <div class="carousel-inner carousel-inner-3"></div>
 
                     <!-- Controles del Carousel -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
