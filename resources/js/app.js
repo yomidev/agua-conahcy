@@ -3,6 +3,6 @@ import './menu-scroll';
 import './mapa.js';
 import './countdown.js';
 import './gallery.js';
-import './reasearch.js';
+import './objetivo.js';
 
 //AOS.init();

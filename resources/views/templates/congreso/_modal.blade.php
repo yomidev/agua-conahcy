@@ -6,7 +6,7 @@
         </div>
         <div class="modal-body">
             <div id="researcher-info">
-                <div class="container">
+                <div class="container" >
                     <img src="{{asset('pictures/brar.jpg')}}" class="mx-auto d-block img-fluid" style="max-width: 200px; max-height: 200px; border-radius: 50%; border: 10px solid #344474;">
                     <h4 class="text-center fw-bold mt-3">Dr. Satinder Kaur Brar</h4>
                     <p class="text-center">Professor and James & Joanne Love Chair in Environmental Engineering

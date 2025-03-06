@@ -58,11 +58,23 @@
     <div class="container mt-2">
         <div class="row align-items-center">
             <div class="col-md-6 text-center">
-                <img src="{{ asset('pictures/banner-1.png') }}" alt="Banner" class="img-fluid">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner"></div>
+
+                    <!-- Controles del Carousel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
             </div>
             <div class="col-md-6">
                 <h4 class="title">Objetivo</h4>
-                <p style="text-align: justify;" class="padding-responsive">
+                <p style="text-align: justify;" class="padding-responsive fs-5">
                     Generar espacios de diálogo, análisis, intercambio y formación, entre diversos agentes de la sociedad sobre las
                     <b>contribuciones de la investigación</b> en temas relacionados con el cuidado del agua, los métodos de tratamiento de agua potable y residual, así como las posibles alternativas para la recuperación y reúso del vital líquido. Además de la implementación de tecnologías emergentes en el tratamiento y monitoreo de la calidad del agua.
                 </p>
@@ -110,9 +122,9 @@
         <h4 class="title text-center">Envío de Trabajos</h4>
         <div class="row align-items-center mt-3">
             <div class="col-md-6">
-                <ol class="padding-responsive-ol" style="text-align: justify;">
+                <ol class="padding-responsive-ol fs-5" style="text-align: justify;">
                     <li>Descargar el formato para envío de trabajos, ingresando en la siguiente liga o escaneando el código QR <a href="https://bit.ly/congreso_agualys" target="_blank" class="fw-bold">https://bit.ly/congreso_agualys</a></li>
-                    <li>Enviar el trabajo al correo: agenda_agua@aguascalientes.tecnm.mx</li>
+                    <li>Enviar el trabajo al correo: <b>agenda_agua@aguascalientes.tecnm.mx</b></li>
                     <li>La fecha límite para recepción de trabajos es el <b>30 de abril de 2025</b></li>
                     <li>La notificación de trabajos aceptados se realizará vía correo electrónico a partir del <b>20 de junio de 2025</b></li>
                     <li>Si el trabajo es aceptado, deberá de registrarse en la página del congreso <a href="https://lanalimsa.aguascalientes.tecnm.mx/" target="_blank" class="fw-bold">https://lanalimsa.aguascalientes.tecnm.mx/</a> del <b>20 de junio al 31 de julio de 2025</b>.</li>
@@ -126,7 +138,7 @@
     </div>
     <div class="container mt-4">
         <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner carousel-inner-2">
                 <!-- Las imágenes se insertarán aquí dinámicamente -->
             </div>
             <!-- Botones de navegación -->
@@ -145,39 +157,45 @@
                 <img src="{{asset('pictures/brar.jpg')}}" alt="" class="img-fluid">
                 <div class="card-body">
                     <!--<p>Título de la plenaria</p>-->
-                    <p class="fw-bold">Dr. Satinder Kaur Brar</p>
-                    <br>
+                    <p class="fw-bold">Dr. Satinder <br>Kaur Brar
+                        <br><img src="{{asset('pictures/canada.png')}}" alt="Canadá" class="img-fluid" style="max-width: 50px">
+                    </p>
                     <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal" data-researcher="satinder_kaur_brar">Curriculum Vitae</a>
                 </div>
             </div>
             <div class="card plenary-card text-center">
                 <img src="{{asset('pictures/eva.jpg')}}" alt="" class="img-fluid">
                 <div class="card-body">
-                    <p class="fw-bold">Dra. Eva Rose Kozak</p>
-                    <br>
+                    <p class="fw-bold">Dra. Eva Rose <br>Kozak
+                        <br><img src="{{asset('pictures/bandera.png')}}" alt="México" class="img-fluid" style="max-width: 50px">
+                    </p>
                     <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-researcher="eva_rose_kozak">Curriculum Vitae</a>
                 </div>
             </div>
             <div class="card plenary-card text-center">
                 <img src="{{asset('pictures/natalie.png')}}" alt="" class="img-fluid">
                 <div class="card-body">
-                    <p class="fw-bold">Dra. Natalie Mladenov</p>
-                    <br>
+                    <p class="fw-bold">Dra. Natalie <br>Mladenov
+                        <br><img src="{{asset('pictures/estados-unidos-de-america.png')}}" alt="Estados Unidos" class="img-fluid" style="max-width: 50px">
+                    </p>
                     <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal3">Curriculum Vitae</a>
                 </div>
             </div>
             <div class="card plenary-card text-center">
                 <img src="{{asset('pictures/amy.jpg')}}" alt="" class="img-fluid">
                 <div class="card-body">
-                    <p class="fw-bold">Prof. Amy M. Bilton </p>
-                    <br>
+                    <p class="fw-bold">Prof. Amy M. <br>Bilton
+                        <br><img src="{{asset('pictures/canada.png')}}" alt="Canadá" class="img-fluid" style="max-width: 50px">
+                    </p>
                     <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal4">Curriculum Vitae</a>
                 </div>
             </div>
             <div class="card plenary-card text-center">
-                <img src="{{asset('pictures/rachelgomes.jpg')}}" alt="" class="img-fluid">
+                <img src="{{asset('pictures/rachelgomes.png')}}" alt="" class="img-fluid">
                 <div class="card-body">
-                    <p class="fw-bold">Prof. Rachel Louise Gomes</p>
+                    <p class="fw-bold">Prof. Rachel Louise Gomes
+                        <br><img src="{{asset('pictures/reino-unido.png')}}" alt="Inglaterra" class="img-fluid" style="max-width: 50px">
+                    </p>
                     <a class="btn btn-primary" style="background-color:#344474 !important; border:none !important" data-bs-toggle="modal" data-bs-target="#exampleModal5">Curriculum Vitae</a>
                 </div>
             </div>

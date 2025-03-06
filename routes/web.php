@@ -15,14 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 //Frontend
 Route::get('/', function () {
-    return view('welcome');
+    return view('congreso');
 });
-Route::get('/',[App\Http\Controllers\FrontendController::class, 'index'])->name('index');
+Route::get('/',[App\Http\Controllers\FrontendController::class, 'congreso'])->name('congreso');
 Route::get('/servicios',[App\Http\Controllers\FrontendController::class, 'services'])->name('services');
 Route::get('/posgrados',[App\Http\Controllers\FrontendController::class, 'postgraduate'])->name('postgraduate');
 Route::get('/investigacion',[App\Http\Controllers\FrontendController::class, 'investigation'])->name('investigation');
 Route::get('/vinculacion',[App\Http\Controllers\FrontendController::class, 'vinculation'])->name('vinculation');
-Route::get('/congreso',[App\Http\Controllers\FrontendController::class, 'congreso'])->name('congreso');
+Route::get('/index',[App\Http\Controllers\FrontendController::class, 'index'])->name('index');
 
 Auth::routes();
 Route::any('register', function () { abort(403);});

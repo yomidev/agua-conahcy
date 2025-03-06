@@ -4,7 +4,7 @@
     </button>
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 ms-auto mb-lg-0">
-            <li class="nav-item {{ Request::is('/') ? 'active2' : '' }}"><a href="{{route('index')}}" class="nav-link text-white hover-link">Inicio</a></li>
+            <li class="nav-item {{ Request::is('/index') ? 'active2' : '' }}"><a href="{{route('index')}}" class="nav-link text-white hover-link">Inicio</a></li>
             <li class="nav-item">
                 <a href="{{route('index')}}#conocenos" class="nav-link text-white hover-link"  id="conocenos-link">Conócenos</a>
             </li>
@@ -12,7 +12,7 @@
             <li class="nav-item {{ Request::is('investigacion') ? 'active2' : '' }}"><a href="{{route('investigation')}}" class="nav-link text-white hover-link">Investigación</a></li>
             <li class="nav-item {{ Request::is('posgrados') ? 'active2' : '' }}"><a href="{{route('postgraduate')}}" class="nav-link text-white hover-link">Posgrados</a></li>
             <li class="nav-item {{ Request::is('vinculacion') ? 'active2' : '' }}"><a href="{{route('vinculation')}}" class="nav-link text-white hover-link">Vinculación</a></li>
-            <li class="nav-item {{ Request::is('congreso') ? 'active2' : '' }}"><a href="{{route('congreso')}}" class="nav-link text-white hover-link">Congreso</a></li>
+            <li class="nav-item {{ Request::is('/') ? 'active2' : '' }}"><a href="{{route('congreso')}}" class="nav-link text-white hover-link">Congreso</a></li>
             <li class="nav-item {{ Request::is('#comunicacion') ? 'active2' : '' }}"><a href="#comunicacion" class="nav-link text-white hover-link">Comunicación Social</a></li>
         </ul>
     </div>
