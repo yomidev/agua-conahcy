@@ -13,8 +13,9 @@
     <!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-    <link rel="stylesheet" href="{{asset('build/assets/app-BceF5LsZ.css')}}">
-    <script src="{{asset('build/assets/app-ClJX3867.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('build/assets/app-Bih1bRUk.css') }}">
+    <script src="{{ asset('build/assets/app-DchJmsP7.js') }}"></script>
+
 
 </head>
 <body>

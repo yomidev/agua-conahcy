@@ -82,37 +82,37 @@
         </div>
     </div>
     <div class="container mt-4">
-        <h4 class="title text-center">Áreas Tématicas</h4>
+        <h4 class="title text-center">Áreas Temáticas</h4>
         <div class="d-flex flex-wrap justify-content-center gap-3">
-            <div class="topic-card">
+            <div class="topic-card" data-id="1">
                 <img src="{{asset('pictures/captacion.png')}}" alt="" class="img-fluid">
                 Captación de agua
             </div>
-            <div class="topic-card">
+            <div class="topic-card" data-id="2">
                 <img src="{{asset('pictures/cuidado.png')}}" alt="" class="img-fluid">
                 Cuidado del agua
             </div>
-            <div class="topic-card">
+            <div class="topic-card" data-id="3">
                 <img src="{{asset('pictures/potable.png')}}" alt="" class="img-fluid">
                 Métodos de tratamiento de agua potable
             </div>
-            <div class="topic-card">
+            <div class="topic-card" data-id="4">
                 <img src="{{asset('pictures/residual.png')}}" alt="" class="img-fluid">
                 Métodos de tratamiento de aguas residuales
             </div>
-            <div class="topic-card">
+            <div class="topic-card" data-id="5">
                 <img src="{{asset('pictures/reuso.png')}}" alt="" class="img-fluid">
                 Recuperación y reúso del agua
             </div>
-            <div class="topic-card">
+            <div class="topic-card" data-id="6">
                 <img src="{{asset('pictures/calidad.png')}}" alt="" class="img-fluid">
                 Monitoreo de la calidad del agua
             </div>
-            <div class="topic-card">
+            <div class="topic-card" data-id="7">
                 <img src="{{asset('pictures/tecnologias.png')}}" alt="" class="img-fluid">
                 Tecnologías emergentes en materia de agua
             </div>
-            <div class="topic-card">
+            <div class="topic-card" data-id="8">
                 <img src="{{asset('pictures/desarrollo.png')}}" alt="" class="img-fluid">
                 Desarrollo de plataformas tecnológicas para la gestión integral del agua
             </div>
@@ -191,7 +191,7 @@
                 </div>
             </div>
             <div class="card plenary-card text-center">
-                <img src="{{asset('pictures/rachelgomes.png')}}" alt="" class="img-fluid">
+                <img src="{{asset('pictures/rachelgomes.jpg')}}" alt="" class="img-fluid">
                 <div class="card-body">
                     <p class="fw-bold">Prof. Rachel Louise Gomes
                         <br><img src="{{asset('pictures/reino-unido.png')}}" alt="Inglaterra" class="img-fluid" style="max-width: 50px">
@@ -206,6 +206,7 @@
     @include('templates.congreso._modal3')
     @include('templates.congreso._modal4')
     @include('templates.congreso._modal5')
+    @include('templates.congreso._modalarea')
 
 
 </main>
