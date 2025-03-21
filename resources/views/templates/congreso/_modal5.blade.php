@@ -7,7 +7,7 @@
         <div class="modal-body">
             <div id="researcher-info">
                 <div class="container">
-                    <img src="{{asset('pictures/rachelgomes.png')}}" class="mx-auto d-block img-fluid" style="max-width: 200px; max-height: 200px; border-radius: 50%; border: 10px solid #344474;">
+                    <img src="{{asset('pictures/rachelgomes.jpg')}}" class="mx-auto d-block img-fluid" style="max-width: 200px; max-height: 200px; border-radius: 50%; border: 10px solid #344474;">
                     <h4 class="text-center fw-bold mt-3">Prof. Rachel Louise Gomes</h4>
                     <p class="text-center">Professor of Water & Resource Processing, Faculty of Engineering, University of Nottingham, United Kingdom
                     <br>Head of the Food Water Waste Research Group (leading >70 researchers)
