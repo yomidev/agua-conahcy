@@ -125,7 +125,7 @@
                 <ol class="padding-responsive-ol fs-5" style="text-align: justify;">
                     <li>Descargar el formato para envío de trabajos, ingresando en la siguiente liga o escaneando el código QR <a href="https://bit.ly/congreso_agualys" target="_blank" class="fw-bold">https://bit.ly/congreso_agualys</a></li>
                     <li>Enviar el trabajo al correo: <b>agenda_agua@aguascalientes.tecnm.mx</b></li>
-                    <li>La fecha límite para recepción de trabajos es el <b>30 de abril de 2025</b></li>
+                    <li>La fecha límite para recepción de trabajos es el <b>30 de Mayo de 2025</b></li>
                     <li>La notificación de trabajos aceptados se realizará vía correo electrónico a partir del <b>20 de junio de 2025</b></li>
                     <li>Si el trabajo es aceptado, deberá de registrarse en la página del congreso <a href="https://lanalimsa.aguascalientes.tecnm.mx/" target="_blank" class="fw-bold">https://lanalimsa.aguascalientes.tecnm.mx/</a> del <b>20 de junio al 31 de julio de 2025</b>.</li>
                 </ol>
