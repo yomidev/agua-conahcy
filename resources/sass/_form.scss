@@ -1,0 +1,136 @@
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    counter-reset: step;
+}
+.step {
+    text-align: center;
+    position: relative;
+    flex: 1;
+}
+.step:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 2px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+.step:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+.step:first-child:after {
+    content: none;
+}
+.step.active:before {
+    border-color: #344474;
+    background-color: #344474;
+    color: white;
+}
+.step.active:after {
+    background-color: #344474;
+}
+.step.completed:before {
+    border-color: #344474;
+    background-color: #344474;
+    color: white;
+}
+.step.completed:after {
+    background-color: #344474;
+}
+.form-step {
+    display: none;
+}
+.form-step.active {
+    display: block;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.btn-next {
+    background-color: #344474 !important;
+    border-color: #344474 !important;
+    &:hover{
+        background-color: #344474 !important;
+    }
+}
+
+.btn-prev {
+    background-color: #344474 !important;
+    border-color: #344474 !important;
+    &:hover{
+        background-color: #344474 !important;
+    }
+}
+
+ .language-selector-container {
+        max-width: 400px;
+        margin-left: auto;
+    }
+    
+    .custom-translate-widget {
+        background: white;
+        border-radius: 4px;
+        padding: 5px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    
+    /* Ocultar la barra superior de Google */
+    .goog-te-banner-frame {
+        display: none !important;
+    }
+    
+    body {
+        top: 0px !important;
+    }
+    
+    /* Mejorar el selector */
+    .goog-te-combo {
+        padding: 8px 12px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        background-color: white;
+        cursor: pointer;
+    }
+    
+    .google-credit {
+        text-align: right;
+        font-size: 0.8em;
+    }
+    
+    .google-credit a {
+        color: #6c757d;
+        text-decoration: none;
+    }
+    
+    .google-credit a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+    #google_translate_element{
+        border: 2px solid #344474;
+    }
+

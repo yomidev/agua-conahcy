@@ -1,4 +1,4 @@
-<div class="modal fade" tabindex="-1" role="dialog" id="deleteR{{ $i->id }}">
+<div class="modal fade" tabindex="-1" role="dialog" id="delete{{ $r->id }}">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -13,8 +13,9 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <a  class="btn btn-danger delete-confirm" href="{{ route('internacional_delete', $i->id) }}">Eliminar</a>
+          <a  class="btn btn-danger delete-confirm" href="{{ route('registro_delete', $r->id) }}">Eliminar</a>
         </div>
       </div>
     </div>
   </div>
+

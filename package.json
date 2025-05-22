@@ -17,6 +17,8 @@
     "dependencies": {
         "bootstrap-icons": "^1.11.3",
         "html2pdf.js": "^0.10.2",
-        "tinymce": "^7.0.0"
+        "sweetalert2": "^11.21.2",
+        "tinymce": "^7.0.0",
+        "tom-select": "^2.4.3"
     }
 }

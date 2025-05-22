@@ -16,6 +16,8 @@ use App\Models\Project;
 use App\Models\Institution;
 use App\Models\Dependency;
 use App\Models\International;
+use App\Models\Congress;
+use Illuminate\Support\Facades\File;
 
 class AdminController extends Controller
 {
@@ -515,6 +517,57 @@ class AdminController extends Controller
             }
         }
         $institucion->delete();
+        return response()->json(['success' => true]);
+    }
+
+    public function registro(){
+        $registro = Congress::all();
+        $json = public_path('json/countries.json');
+        $jsonData = File::exists($json) ? File::get($json) : '[]';
+        $countries = json_decode($jsonData, true);
+        return view('admin.registro.index',['registro'=>$registro, 'countries'=>$countries]);
+    }
+    public function registro_delete($id){
+        $registro = Congress::findOrFail($id);
+        $registro->delete();
+        return response()->json(['success' => true]);
+    }
+
+    public function registro_update(Request $request, $id){
+        $registro = Congress::findOrFail($id);
+        $registro->name = $request->name;
+        $registro->lastname = $request->lastname;
+        $registro->nacionality = $request->nacionality;
+        $registro->age = $request->age;
+        $registro->gender = $request->gender;
+        $registro->email = $request->email;
+        $registro->phone = $request->phone;
+        $registro->institution = $request->institution;
+        $registro->position = $request->position;
+        $registro->faculty = $request->faculty;
+        $registro->country = $request->country;
+        $registro->letter = $request->letter;
+        $registro->participation = $request->participation;
+        $registro->presentation = $request->presentation;
+        $registro->area = $request->area;
+        $registro->proof = $request->proof;
+        $registro->food = $request->food;
+        if($request->language == 'Otro'){
+            $registro->language = $request->other_language;
+        }else{
+            $registro->language = $request->language;
+        }
+        $registro->invoice = $request->invoice;
+        if($request->invoice == 1){
+            $registro->billingName = $request->billingName;
+            $registro->rfc = $request->rfc;
+            $registro->billingAddress = $request->billingAddress;
+            $registro->billingEmail = $request->billingEmail;
+        }
+        $registro->consent = $request->consent;
+        $registro->record = $request->record;
+        $registro->save();
+
         return response()->json(['success' => true]);
     }
 

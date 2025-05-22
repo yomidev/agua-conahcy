@@ -23,7 +23,9 @@ Route::get('/posgrados',[App\Http\Controllers\FrontendController::class, 'postgr
 Route::get('/investigacion',[App\Http\Controllers\FrontendController::class, 'investigation'])->name('investigation');
 Route::get('/vinculacion',[App\Http\Controllers\FrontendController::class, 'vinculation'])->name('vinculation');
 Route::get('/index',[App\Http\Controllers\FrontendController::class, 'index'])->name('index');
-
+Route::get('/congreso/registro', [App\Http\Controllers\FrontendController::class, 'registro'])->name('registro');
+Route::post('/registro/step/{step}', [App\Http\Controllers\FrontendController::class, 'handleStep'])->name('registro.step');
+Route::post('/registro/completar', [App\Http\Controllers\FrontendController::class, 'completeRegistration'])->name('registro.complete');
 Auth::routes();
 Route::any('register', function () { abort(403);});
 
@@ -85,5 +87,9 @@ Route::middleware('auth')->group(function(){
     Route::post('/admin/internacional/store',[App\Http\Controllers\AdminController::class,'internacional_create'])->name('internacional_create');
     Route::put('/admin/internacional/update/{id}',[App\Http\Controllers\AdminController::class,'internacional_update'])->name('internacional_update');
     Route::get('/admin/internacional/delete/{id}',[App\Http\Controllers\AdminController::class,'internacional_delete'])->name('internacional_delete');
+    //Register Info
+    Route::get('/admin/registro',[App\Http\Controllers\AdminController::class, 'registro'])->name('registro.admin');
+    Route::get('/admin/registro/delete/{id}',[App\Http\Controllers\AdminController::class, 'registro_delete'])->name('registro_delete');
+    Route::put('/admin/registro/update/{id}',[App\Http\Controllers\AdminController::class, 'registro_update'])->name('registro_update');
 });
 

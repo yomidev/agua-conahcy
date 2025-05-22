@@ -388,6 +388,11 @@ return [
                 ],
             ],
         ],
+        [
+            'text' => 'Registro',
+            'route' => 'registro.admin',
+            'icon' => 'fas fa-fw fa-user-plus',
+        ],
     ],
 
     /*

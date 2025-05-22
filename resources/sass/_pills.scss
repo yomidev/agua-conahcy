@@ -1,0 +1,21 @@
+.nav-pills .nav-link {
+    background-color: #888;
+    color: #495057;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size:12pt;
+    letter-spacing: 1.5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #344474;
+    color: #fff;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #e2e6ea;
+    color: #495057;
+}
