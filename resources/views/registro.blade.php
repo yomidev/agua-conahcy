@@ -546,7 +546,12 @@
                     }
                 });
 
-                const response = await fetch(form.action, {
+                let actionUrl = form.action;
+                if (location.protocol === 'https:' && actionUrl.startsWith('http://')) {
+                    actionUrl = actionUrl.replace('http://', 'https://');
+                }
+
+                const response = await fetch(actionUrl, {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json',
