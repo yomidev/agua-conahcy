@@ -151,7 +151,17 @@
                     </div>
                     <div class="col-12 col-md-6 mt-3">
                         <label for="area" class="form-label">Área Tématica</label>
-                        <input type="text" class="form-control" id="area" name="area" placeholder="Ej. Energías Renovables" value="{{ old('area', $formData['area'] ?? '') }}">
+                        <select name="area" id="area" class="form-select">
+                            <option value="" {{ old('area', session('form_data.area')) ? '' : 'selected disabled' }}>Selecciona una opción</option>
+                            <option value="Captación de Agua" {{ old('area', session('form_data.area')) == 'Captación de Agua' ? 'selected' : '' }}>Captación de Agua</option>
+                            <option value="Cuidado del Agua" {{ old('area', session('form_data.area')) == 'Cuidado del Agua' ? 'selected' : '' }}>Cuidado del Agua</option>
+                            <option value="Métodos de Tratamiento de Agua Potable" {{ old('area', session('form_data.area')) == 'Métodos de Tratamiento de Agua Potable' ? 'selected' : '' }}>Métodos de Tratamiento de Agua Potable</option>
+                            <option value="Métodos de Tratamiento de Aguas Residuales" {{ old('area', session('form_data.area')) == 'Métodos de Tratamiento de Aguas Residuales' ? 'selected' : '' }}>Métodos de Tratamiento de Aguas Residuales</option>
+                            <option value="Recuperación y Reúso del Agua" {{ old('area', session('form_data.area')) == 'Recuperación y Reúso del Agua' ? 'selected' : '' }}>Recuperación y Reúso del Agua</option>
+                            <option value="Monitoreo de la Calidad del Agua" {{ old('area', session('form_data.area')) == 'Monitoreo de la Calidad del Agua' ? 'selected' : '' }}>Monitoreo de la Calidad del Agua</option>
+                            <option value="Tecnologías Emergentes en Materia de Agua" {{ old('area', session('form_data.area')) == 'Tecnologías Emergentes en Materia de Agua' ? 'selected' : '' }}>Tecnologías Emergentes en Materia de Agua</option>
+                            <option value="Desarrollo de Plataformas Tecnológicas para la Gestión Integral del Agua" {{ old('area', session('form_data.area')) == 'Desarrollo de Plataformas Tecnológicas para la Gestión Integral del Agua' ? 'selected' : '' }}>Desarrollo de Plataformas Tecnológicas para la Gestión Integral del Agua</option>
+                        </select>
                     </div>
                     <div class="col-12 mt-3">
                         <label for="proof">¿Requiere constancia de participación?</label><br>

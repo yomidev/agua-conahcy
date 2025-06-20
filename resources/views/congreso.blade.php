@@ -131,7 +131,7 @@
                 </ol>
             </div>
             <div class="col-md-6 text-center">
-                <a href="{{ route('registro') }}" class="btn btn-primary fw-bold" target="_blank" style="background-color:#344474 !important; border:none; font-size: 20px">REGISTRO</a><br>
+                <a href="{{ route('registro') }}" class="btn btn-primary fw-bold" target="_blank" style="background-color:#344474 !important; border:none; font-size: 40px; width: 80%; height: 80px; border-radius: 25px">REGISTRO</a><br>
                 <!--<img src="{{asset('pictures/qrcode_3Lx2eXTadT.png')}}" alt="" class="img-fluid w-50"><br>
                 <a href="https://bit.ly/congreso_agualys" class="btn btn-primary fw-bold" target="_blank" style="background-color:#344474 !important; border:none">Descargar plantilla</a>-->
             </div>
