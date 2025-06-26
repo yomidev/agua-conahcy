@@ -120,7 +120,7 @@
     </div>
     <div class="container mt-5">
         <h4 class="title text-center">Envío de Trabajos</h4>
-        <div class="row align-items-center mt-3">
+        <div class="row align-items-start mt-3">
             <div class="col-md-6">
                 <ol class="padding-responsive-ol fs-5" style="text-align: justify;">
                     <li>Descargar el formato para envío de trabajos, ingresando en la siguiente liga o escaneando el código QR <a href="https://bit.ly/congreso_agualys" target="_blank" class="fw-bold">https://bit.ly/congreso_agualys</a></li>
@@ -132,8 +132,8 @@
             </div>
             <div class="col-md-6 text-center">
                 <a href="{{ route('registro') }}" class="btn btn-primary fw-bold" target="_blank" style="background-color:#344474 !important; border:none; font-size: 40px; width: 80%; height: 80px; border-radius: 25px">REGISTRO</a><br>
-                <br><h2>Registro para Directivos</h2>
-                <a href="{{ route('registro.directivos') }}" class="btn btn-primary fw-bold" target="_blank" style="background-color:#344474 !important; border:none; font-size: 40px; width: 80%; height: 80px; border-radius: 25px">CLICK AQUI</a><br>
+                <br><br><br><br><br><br><h2>Registro para Directivos</h2>
+                <a href="{{ route('registro.directivos') }}" class="btn btn-primary btn-danger fw-bold" target="_blank" style="border:none; font-size: 40px; width: 80%; height: 80px; border-radius: 25px">CLICK AQUI</a><br>
                 <!--<img src="{{asset('pictures/qrcode_3Lx2eXTadT.png')}}" alt="" class="img-fluid w-50"><br>
                 <a href="https://bit.ly/congreso_agualys" class="btn btn-primary fw-bold" target="_blank" style="background-color:#344474 !important; border:none">Descargar plantilla</a>-->
             </div>
