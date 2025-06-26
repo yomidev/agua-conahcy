@@ -26,6 +26,9 @@ Route::get('/index',[App\Http\Controllers\FrontendController::class, 'index'])->
 Route::get('/congreso/registro', [App\Http\Controllers\FrontendController::class, 'registro'])->name('registro');
 Route::post('/registro/step/{step}', [App\Http\Controllers\FrontendController::class, 'handleStep'])->name('registro.step');
 Route::post('/registro/completar', [App\Http\Controllers\FrontendController::class, 'completeRegistration'])->name('registro.complete');
+Route::get('/congreso/registro/directivos',[App\Http\Controllers\FrontendController::class, 'registro_directivos'])->name('registro.directivos');
+Route::post('/registro/directivos/step/{step}',[App\Http\Controllers\FrontendController::class, 'handleDirectivosStep'])->name('registro.directivos.step');
+Route::post('/registro/directivos/completar',[App\Http\Controllers\FrontendController::class, 'completeDirectivosRegistration'])->name('registro.directivos.complete');
 Auth::routes();
 Route::any('register', function () { abort(403);});
 
@@ -91,5 +94,9 @@ Route::middleware('auth')->group(function(){
     Route::get('/admin/registro',[App\Http\Controllers\AdminController::class, 'registro'])->name('registro.admin');
     Route::get('/admin/registro/delete/{id}',[App\Http\Controllers\AdminController::class, 'registro_delete'])->name('registro_delete');
     Route::put('/admin/registro/update/{id}',[App\Http\Controllers\AdminController::class, 'registro_update'])->name('registro_update');
+     //Register Directivos Info
+    Route::get('/admin/registro/directivos',[App\Http\Controllers\AdminController::class, 'registro_directivos'])->name('registro.directivos.admin');
+    Route::get('/admin/registro/directivos/delete/{id}',[App\Http\Controllers\AdminController::class, 'registro_directivos_delete'])->name('registro_directivos_delete');
+    Route::put('/admin/registro/directivos/update/{id}',[App\Http\Controllers\AdminController::class, 'registro_directivos_update'])->name('registro_directivos_update');
 });
 

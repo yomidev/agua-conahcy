@@ -393,6 +393,11 @@ return [
             'route' => 'registro.admin',
             'icon' => 'fas fa-fw fa-user-plus',
         ],
+        [
+            'text' => 'Registro Directivos',
+            'route' => 'registro.directivos.admin',
+            'icon' => 'fas fa-fw fa-user-plus',
+        ],
     ],
 
     /*

@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Registro - Congreso Internacional')
+@section('title', 'Registro Directivos')
 @section('plugins.SweetAlert2', true)
 @section('plugins.Datatables', true)
 @section('plugins.Select2', true)
@@ -20,7 +20,6 @@
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Apellidos</th>
-                    <th>Tipo de Participante</th>
                     <th>Opciones</th>
                 </tr>
             </thead>
@@ -31,16 +30,6 @@
                     <td class="text-center">{{$r->id}}</td>
                     <td class="text-center">{{$r->name}}</td>
                     <td class="text-center">{{$r->lastname}}</td>
-                    <td class="text-center">
-                        @if ($r->participation == 1)
-                            <span class="badge badge-primary">Asistente</span>
-                        @elseif ($r->participation == 2)
-                            <span class="badge badge-success">Ponente Oral</span>
-                        @elseif( $r->participation == 3)
-                            <span class="badge badge-info">Presentación de Cartel</span>
-                        @elseif ($r->participation == 4)
-                            <span class="badge badge-danger">Taller y Sesión Paralela</span>
-                        @endif
                     <td class="text-center">
                         <button class="btn btn-success" data-toggle="modal" data-target="#ViewR{{$r->id}}">
                             <i class="fa fa-eye" aria-hidden="true"></i>
@@ -53,9 +42,9 @@
                         </button>-->
                     </td>
                 </tr>
-                @include('admin.registro.modals.view')
-                @include('admin.registro.modals.editar')
-                @include('admin.registro.modals.delete')
+                @include('admin.directivos.modals.view')
+                @include('admin.directivos.modals.editar')
+                @include('admin.directivos.modals.delete')
             @endforeach
             </tbody>
         </table>
@@ -100,7 +89,7 @@
                             title: '¡Registro Actualizado!',
                             text: 'El registro se ha actualizado correctamente.',
                         }).then(function() {
-                            window.location.href = "{{ route('registro.admin') }}";
+                            window.location.href = "{{ route('registro.directivos.admin') }}";
                         });
                     } else {
                         Swal.fire({
@@ -136,7 +125,7 @@
                         text: 'El registro ha sido eliminado exitosamente.',
                         type: 'success'
                     }).then(function(){
-                        window.location.href = "{{ route('registro.admin') }}";
+                        window.location.href = "{{ route('registro.directivos.admin') }}";
                     });
                 } else {
                     // Mostrar Sweet Alert indicando que ha habido un error al eliminar el registro
