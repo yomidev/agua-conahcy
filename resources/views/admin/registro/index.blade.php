@@ -7,58 +7,61 @@
 @section('plugins.Summernote', true)
 
 @section('content_header')
-    <h1 class="m-0 text-dark fw-bolder">Registro - Congreso Internacional</h1>
+<h1 class="m-0 text-dark fw-bolder">Registro - Congreso Internacional</h1>
 @stop
 
 @section('content')
 <div class="card">
     <div class="card-body">
+        <a href="{{ route('registro.exportar') }}" class="btn btn-success float-right mb-3">
+            <i class="fas fa-file-excel"></i> Exportar Registro
+        </a>
         <div class="container-fluid table-responsive">
-        <table class="table table-striped" id="tecin">
-            <thead>
-                <tr class="text-center">
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Apellidos</th>
-                    <th>Tipo de Participante</th>
-                    <th>Opciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($registro as $r)
+            <table class="table table-striped" id="tecin">
+                <thead>
+                    <tr class="text-center">
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Tipo de Participante</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($registro as $r)
 
-                <tr>
-                    <td class="text-center">{{$r->id}}</td>
-                    <td class="text-center">{{$r->name}}</td>
-                    <td class="text-center">{{$r->lastname}}</td>
-                    <td class="text-center">
-                        @if ($r->participation == 1)
+                    <tr>
+                        <td class="text-center">{{$r->id}}</td>
+                        <td class="text-center">{{$r->name}}</td>
+                        <td class="text-center">{{$r->lastname}}</td>
+                        <td class="text-center">
+                            @if ($r->participation == 1)
                             <span class="badge badge-primary">Asistente</span>
-                        @elseif ($r->participation == 2)
+                            @elseif ($r->participation == 2)
                             <span class="badge badge-success">Ponente Oral</span>
-                        @elseif( $r->participation == 3)
+                            @elseif( $r->participation == 3)
                             <span class="badge badge-info">Presentación de Cartel</span>
-                        @elseif ($r->participation == 4)
+                            @elseif ($r->participation == 4)
                             <span class="badge badge-danger">Taller y Sesión Paralela</span>
-                        @endif
-                    <td class="text-center">
-                        <button class="btn btn-success" data-toggle="modal" data-target="#ViewR{{$r->id}}">
-                            <i class="fa fa-eye" aria-hidden="true"></i>
-                        </button>
-                        <button class="btn btn-warning" data-toggle="modal" data-target="#edit{{ $r->id }}">
-                            <i class="fa fa-pen" aria-hidden="true"></i>
-                        </button>
-                        <!--<button class="btn btn-danger destroy" data-toggle="modal" data-target="#delete{{ $r->id }}">
+                            @endif
+                        <td class="text-center">
+                            <button class="btn btn-success" data-toggle="modal" data-target="#ViewR{{$r->id}}">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn-warning" data-toggle="modal" data-target="#edit{{ $r->id }}">
+                                <i class="fa fa-pen" aria-hidden="true"></i>
+                            </button>
+                            <!--<button class="btn btn-danger destroy" data-toggle="modal" data-target="#delete{{ $r->id }}">
                             <i class="fa fa-trash" aria-hidden="true"></i>
                         </button>-->
-                    </td>
-                </tr>
-                @include('admin.registro.modals.view')
-                @include('admin.registro.modals.editar')
-                @include('admin.registro.modals.delete')
-            @endforeach
-            </tbody>
-        </table>
+                        </td>
+                    </tr>
+                    @include('admin.registro.modals.view')
+                    @include('admin.registro.modals.editar')
+                    @include('admin.registro.modals.delete')
+                    @endforeach
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

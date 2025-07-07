@@ -30,8 +30,12 @@
                 style="font-weight:900 !important; display:inline-block">Fecha</span><br>25 y 26 de <br>Septiembre de
             2025</h3>
         <h3 class="text-center text-white" style="letter-spacing:2px"><span class="text-uppercase mb-3"
-                style="font-weight:900 !important; display:inline-block">Sede</span> <br>Instituto Tecnológico <br>de
-            Tijuana</h3>
+                style="font-weight:900 !important; display:inline-block">Sede</span> <br>
+            <a href="https://www.tijuana.tecnm.mx/" target="_blank">
+                <img src="{{ asset('pictures/tijuana-logo.png') }}" alt="Logo Tijuana" class="img-fluid"
+                    style="max-width: 100px; margin-top: 10px;">
+            </a>
+        </h3>
         <h3 class="text-center text-white" style="letter-spacing:2px"><span class="text-uppercase mb-3"
                 style="font-weight:900 !important; display:inline-block">Modalidad </span><br>Híbrida</h3>
     </div>
