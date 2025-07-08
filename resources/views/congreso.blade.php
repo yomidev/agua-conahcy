@@ -154,6 +154,11 @@
                 <a href="{{ asset('documents/hospedaje_tijuana.pdf') }}" target="_blank" download
                     class="btn btn-primary fw-bold"
                     style="background-color:#621132 !important; border:none; font-size: 30px; width: 80%; border-radius: 25px">Hospedaje</a>
+                <br><br>
+                <a href="{{ asset('documents/manual_estancia.pdf') }}" target="_blank" download
+                    class="btn btn-primary fw-bold"
+                    style="background-color:#621132 !important; border:none; font-size: 30px; width: 80%; border-radius: 25px">Manual
+                    de Estancia</a>
                 <!--<ol class="padding-responsive-ol fs-5" style="text-align: justify;">
                     <li>Descargar el formato para envío de trabajos, ingresando en la siguiente liga o escaneando el código QR <a href="https://bit.ly/congreso_agualys" target="_blank" class="fw-bold">https://bit.ly/congreso_agualys</a></li>
                     <li>Enviar el trabajo al correo: <b>agenda_agua@aguascalientes.tecnm.mx</b></li>
