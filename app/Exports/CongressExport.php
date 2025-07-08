@@ -14,14 +14,16 @@ class CongressExport implements FromCollection, WithHeadings
      */
     public function collection()
     {
-        $participation = [
-            1 => 'Asistente',
-            2 => 'Ponente Oral',
-            3 => 'Presentación de Cartel',
-            4 => 'Taller y Sesión Paralela',
-        ];
+
 
         return Congress::all()->map(function ($congress) {
+
+            $participation = [
+                '1' => 'Asistente',
+                '2' => 'Ponente Oral',
+                '3' => 'Presentación de Cartel',
+                '4' => 'Taller y Sesión Paralela',
+            ];
 
             return [
                 'Nombre' => $congress->name,
