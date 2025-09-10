@@ -146,7 +146,7 @@
         </p>
         <div class="row align-items-start mt-3">
             <div class="col-md-6">
-                <a href="{{ asset('documents/1pago.pdf') }}" target="_blank" download class="btn btn-primary fw-bold"
+                <a href="{{ asset('documents/1pago2.pdf') }}" target="_blank" download class="btn btn-primary fw-bold"
                     style="background-color:#621132 !important; border:none; font-size: 30px; width: 80%; border-radius: 25px">Cuotas
                     de Inscripción y Solicitud de recibo</a>
                 <br><br>
