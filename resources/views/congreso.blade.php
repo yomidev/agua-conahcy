@@ -145,18 +145,18 @@
             tendencias actuales en el tema del agua y obtener constancia de participación.
         </p>
         <div class="row align-items-start mt-3">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <a href="{{ asset('documents/1pago2.pdf') }}" target="_blank" download class="btn btn-primary fw-bold"
-                    style="background-color:#621132 !important; border:none; font-size: 30px; width: 80%; border-radius: 25px">Cuotas
+                    style="background-color:#621132 !important; border:none; font-size: 28px; width: 80%; border-radius: 25px">Cuotas
                     de Inscripción y Solicitud de recibo</a>
                 <br><br>
                 <a href="{{ asset('documents/hospedaje_tijuana.pdf') }}" target="_blank" download
                     class="btn btn-primary fw-bold"
-                    style="background-color:#621132 !important; border:none; font-size: 30px; width: 80%; border-radius: 25px">Hospedaje</a>
+                    style="background-color:#621132 !important; border:none; font-size: 28px; width: 80%; border-radius: 25px">Hospedaje</a>
                 <br><br>
                 <a href="{{ asset('documents/manual_estancia.pdf') }}" target="_blank" download
                     class="btn btn-primary fw-bold"
-                    style="background-color:#621132 !important; border:none; font-size: 30px; width: 80%; border-radius: 25px">Manual
+                    style="background-color:#621132 !important; border:none; font-size: 28px; width: 80%; border-radius: 25px">Manual
                     de Estancia</a>
                 <!--<ol class="padding-responsive-ol fs-5" style="text-align: justify;">
                     <li>Descargar el formato para envío de trabajos, ingresando en la siguiente liga o escaneando el código QR <a href="https://bit.ly/congreso_agualys" target="_blank" class="fw-bold">https://bit.ly/congreso_agualys</a></li>
@@ -166,13 +166,21 @@
                     <li>Si el trabajo es aceptado, deberá de registrarse en la página del congreso <a href="{{ route('registro') }}" target="_blank" class="fw-bold">https://lanalimsa.aguascalientes.tecnm.mx/congreso/registro</a> del <b>20 de junio al 31 de julio de 2025</b>.</li>
                 </ol>-->
             </div>
-            <div class="col-md-6 text-center">
-                <a href="{{ route('registro') }}" class="btn btn-primary fw-bold" target="_blank"
-                    style="background-color:#344474 !important; border:none; font-size: 40px; width: 80%; height: 80px; border-radius: 25px">REGISTRO</a><br>
-                <br><br><br><br><br><br>
+        <div class="col-md-4 d-flex flex-column justify-content-between text-center" style ="gap:20px"> 
+            <a href="{{ route('registro') }}" class="btn btn-primary fw-bold d-flex align-items-center justify-content-center" target="_blank"
+                style="background-color:#344474 !important; border:none; font-size: 28px; width: 80%; height: 80px; border-radius: 25px">
+                REGISTRO
+            </a>
+            <a href="{{ asset('documents/Programa_Modalidad_Virtual.zip') }}" class="btn btn-primary fw-bold d-flex align-items-center justify-content-center" target="_blank"
+                style="background-color:#00af03 !important; border:none; font-size: 20px; width: 80%; height: 80px; border-radius: 25px">
+                Programa Modalidad Virtual
+            </a>
+        </div>
+
+            <div class="col-md-4 text-center">
                 <h2>Registro para Directivos</h2>
-                <a href="{{ route('registro.directivos') }}" class="btn btn-primary btn-danger fw-bold" target="_blank"
-                    style="border:none; font-size: 40px; width: 80%; height: 80px; border-radius: 25px">CLICK
+                <a href="{{ route('registro.directivos') }}" class="btn btn-primary btn-danger fw-bold d-flex align-items-center justify-content-center" target="_blank"
+                    style="border:none; font-size: 30px; width: 80%; height: 80px; border-radius: 25px">CLICK
                     AQUI</a><br>
                 <!--<img src="{{asset('pictures/qrcode_3Lx2eXTadT.png')}}" alt="" class="img-fluid w-50"><br>
                 <a href="https://bit.ly/congreso_agualys" class="btn btn-primary fw-bold" target="_blank" style="background-color:#344474 !important; border:none">Descargar plantilla</a>-->
