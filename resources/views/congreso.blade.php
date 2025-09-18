@@ -177,11 +177,18 @@
             </a>
         </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 d-flex flex-column justify-content-between text-center" style ="gap:20px">
                 <h2>Registro para Directivos</h2>
                 <a href="{{ route('registro.directivos') }}" class="btn btn-primary btn-danger fw-bold d-flex align-items-center justify-content-center" target="_blank"
                     style="border:none; font-size: 30px; width: 80%; height: 80px; border-radius: 25px">CLICK
-                    AQUI</a><br>
+                    AQUI</a>
+               <a href="{{ asset('documents/Programa_General.pdf') }}" 
+                    class="btn btn-warning fw-bold d-flex align-items-center justify-content-center" 
+                    download
+                    style="font-size: 20px; width: 80%; height: 80px; border-radius: 25px">
+                    Programa General
+                    </a>
+
                 <!--<img src="{{asset('pictures/qrcode_3Lx2eXTadT.png')}}" alt="" class="img-fluid w-50"><br>
                 <a href="https://bit.ly/congreso_agualys" class="btn btn-primary fw-bold" target="_blank" style="background-color:#344474 !important; border:none">Descargar plantilla</a>-->
             </div>
