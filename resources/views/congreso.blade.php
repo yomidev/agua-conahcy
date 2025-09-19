@@ -182,7 +182,7 @@
                 <a href="{{ route('registro.directivos') }}" class="btn btn-primary btn-danger fw-bold d-flex align-items-center justify-content-center" target="_blank"
                     style="border:none; font-size: 30px; width: 80%; height: 80px; border-radius: 25px">CLICK
                     AQUI</a>
-               <a href="{{ asset('documents/Programa_General.pdf') }}" 
+               <a href="{{ asset('documents/Programa COMPLETO_1er Congreso Inter ALIMSA TecNM_vr17sep25.pdf') }}" 
                     class="btn btn-warning fw-bold d-flex align-items-center justify-content-center" 
                     download
                     style="font-size: 20px; width: 80%; height: 80px; border-radius: 25px">
